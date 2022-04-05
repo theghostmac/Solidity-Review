@@ -25,4 +25,12 @@ contract Variables {
         address sender = msg.sender;
     }
 
+    // Constants
+    /*
+    constants are hard coded and can save gas cost
+    constant variables are in capital conventionally
+    */
+    address public constant MY_ADDRESS;
+    uint public constant MY_UINT = 123;
+
 }
