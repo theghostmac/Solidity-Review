@@ -1,7 +1,7 @@
 # Notes from Review 
 -- 
 ## Compiler Version
-The current version is 0.8.13 so stating ```^0.8.0``` is okay.o 
+The current version is 0.8.13 so stating ```^0.8.0``` is okay.
 
 ## Function properties
 public - makes it callable by anyone on the chain
@@ -87,4 +87,20 @@ Global Calling:
 function accessibleFromAnywhere() public {
 
 }
+```
+Ignoring a modifier means setting it to public by default. To restrict your function from external usage, use:
+```solidity
+function accessedInternally() internal {
+
+}
+
+function accessedPrivately() private {
+
+}
+```
+The same applies to variables -- called fields. 
+```solidity
+uint public value; // can be read from outside
+uint private value; // can be accessed only from inside
+uint internal value; // can be accessed only from inside
 ```
