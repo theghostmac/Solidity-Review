@@ -138,3 +138,26 @@ A transaction has several fields.
 1. Contract execution is deterministic; the state change depends on the input
 2. Any participant can validate transactions
 3. Contracts cannot access outside resources, or generate truly random numbers.
+
+## Payment for Computation
+Pay per each executed command. 
+The more computation, the greater the payment.
+Payment is collected by nodes that provide infrastructure.
+One reason for payment is to defend the network from attackers. 
+### Gas
+Price is calculated in gas. You can't buy, sell, or store gas. Fee is not estimated in Ether. Every transaction defines an exchange rate.
+Every command has a price in gas. ```CREATE``` command in bytecode has more gas that ```ADD```.
+
+Without enough gas, a contract will Fail to run. 
+
+## Ethereum Node Types
+1. Miners: execute transactions, generate blocks, get reward.
+2. Full Nodes: verify transactions, store full blockchain, don't get reward.
+3. Light Clients: processes some transactions (mobile apps for example), rely on full nodes for transaction validation.
+
+## Ether Denominations
+wei is the smallest. Ether = 1.
+
+## Transactions and Calls
+A call is the second way to interact with the Ethereum network. It doesn't change a state, free to execute, and faster.
+Has view and pure modifiers.
