@@ -127,4 +127,14 @@ A transaction has several fields.
 5. v, r, s are signatures used to verify the transactions
 6. init or data field contains bytecode or method call. 
 
-## Contract Deployment
+## Block Fields
+1. Block number
+2. Parent's block has
+3. Executed transactions
+4. New state of the network
+5. Timestamp
+
+## Contract Limitations
+1. Contract execution is deterministic; the state change depends on the input
+2. Any participant can validate transactions
+3. Contracts cannot access outside resources, or generate truly random numbers.
