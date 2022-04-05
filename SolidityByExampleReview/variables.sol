@@ -33,4 +33,15 @@ contract Variables {
     address public constant MY_ADDRESS = 0xEbBe13f0F5bF9279f6b74EcBbA91AE06c0D714d7;
     uint public constant MY_UINT = 123;
 
+    // Immutability
+    // immutable vars are like constants
+    // they cannot be modified afterwards
+    address public immutable MY_ADDRESS1;
+    uint public immutable NEWINT;
+
+    constructor (uint _myUint) {
+        MY_ADDRESS1 = msg.sender;
+        NEWINT = _myUint;
+    }
+
 }
