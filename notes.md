@@ -1,5 +1,5 @@
 # Notes from Review 
--- 
+
 ## Compiler Version
 The current version is 0.8.13 so stating ```^0.8.0``` is okay.
 
@@ -97,6 +97,7 @@ function accessedInternally() internal {
 function accessedPrivately() private {
 
 }
+
 ```
 The same applies to variables -- called fields. 
 ```solidity
@@ -107,6 +108,6 @@ uint internal value; // can be accessed only from inside
 
 ## Creating Smart Contract
 1. Write a Solidity Source code.
-2. Compile it. Because nodes in Ethereum don't run Sol code.
+2. Compile it. Because nodes in Ethereum don't run Solidity code.
 3. Deploy it.
 4. Interact with it.
