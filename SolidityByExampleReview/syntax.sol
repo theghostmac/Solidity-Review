@@ -21,5 +21,12 @@ contract Syntax {
 
     address public addr = 0xCA35b7d915458EF540aDe6068dFe2F44E8fa733c;
 
-    
+    bytes1 a = 0xb5;
+    bytes1 b = 0xb6;
+
+    bool public defaultBool; // false
+    uint public defaultUint;
+    int public defaultInt;
+    address public defaultAddr;
+
 }
