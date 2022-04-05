@@ -1,6 +1,7 @@
 # Notes from Review 
+-- 
 ## Compiler Version
-The current version is 0.8.13 so stating ^0.8.0 is okay.
+The current version is 0.8.13 so stating ```^0.8.0``` is okay.o 
 
 ## Function properties
 public - makes it callable by anyone on the chain
@@ -71,7 +72,7 @@ function getValuesBetter(uint a) returns (uint b, uint c) {
 }
 ```
 
-## Encapsultion
+## Encapsulation
 Contracts are deployed on a public network. Any body on the network can call the method of a contract, and 
 this can change the state of a contract. You need to specify what methods can be called from outside.
 Doing this is similar to that of other object-oriented language.
