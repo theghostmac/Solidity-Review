@@ -21,6 +21,7 @@ contract Greeter {
 ```
 
 ## Data types
+```solidity
 bool flag; 
 int signedNum;
 uint unsignedNum;
@@ -28,12 +29,16 @@ int8, ..., int256;
 uint, ..., uint256;
 string;
 address;
+```
 
 ## Variables
-Constants
+Constants:
+```solidity
 uint myName constant = "John";
+```
 
 ## Operators
+```solidity
 uint newVal = (a - b + c) * 2 / 4;
 uint remainder = a % b;
 uint power = a ** 2;
@@ -41,13 +46,17 @@ uint left = a << 2;
 uint right = a >> 4;
 num += 2;
 num++;
+```
 
 ## Comparison operators
+```solidity
 bool larger = a > b;
 bool smaller = a < b;
 bool exp = (a >= b) && (a <= c);
+```
 
 ## Commenting
+```solidity
 // Single Line
 /* Multi
 Line 
@@ -55,6 +64,7 @@ Comments
 Like 
 Go
 */
+```
 
 ## Return Values
 Multiple values can be returned
