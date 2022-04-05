@@ -119,3 +119,12 @@ uint internal value; // can be accessed only from inside
 
 ## Changing a blockchain state
 Deploy a contract, send ether, then change the contract state. Ethereum has a current state. You have to send a transaction to change it's state. Once that transaction get's executed, you have a new Ethereum state.
+A transaction has several fields. 
+1. The first is called nonce. Nonce is a transaction number from an account. 
+2. The next two fields are gas price and gas limit. They are used as payments for executing a transaction.
+3. The next field is a to -- a receiver's address.
+4. Then we have value. It holds the amount of funds.
+5. v, r, s are signatures used to verify the transactions
+6. init or data field contains bytecode or method call. 
+
+## Contract Deployment
