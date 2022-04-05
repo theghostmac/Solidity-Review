@@ -104,3 +104,9 @@ uint public value; // can be read from outside
 uint private value; // can be accessed only from inside
 uint internal value; // can be accessed only from inside
 ```
+
+## Creating Smart Contract
+1. Write a Solidity Source code.
+2. Compile it. Because nodes in Ethereum don't run Sol code.
+3. Deploy it.
+4. Interact with it.
