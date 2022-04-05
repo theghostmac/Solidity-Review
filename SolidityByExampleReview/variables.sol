@@ -16,21 +16,21 @@ contract Variables {
     string public text = "Hello";
     uint public num = 123;
 
-    function doSomething() public {
-        // local variables
-        uint i = 456;
+    // function doSomething() public {
+    //     // local variables
+    //     uint i = 456;
 
-        // global variables
-        uint timestamp = block.timestamp;
-        address sender = msg.sender;
-    }
+    //     // global variables
+    //     uint timestamp = block.timestamp;
+    //     address sender = msg.sender;
+    // }
 
     // Constants
     /*
     constants are hard coded and can save gas cost
     constant variables are in capital conventionally
     */
-    address public constant MY_ADDRESS;
+    address public constant MY_ADDRESS = 0xEbBe13f0F5bF9279f6b74EcBbA91AE06c0D714d7;
     uint public constant MY_UINT = 123;
 
 }
