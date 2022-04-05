@@ -156,7 +156,7 @@ Payment is collected by nodes that provide infrastructure.
 One reason for payment is to defend the network from attackers. 
 ### Gas
 Price is calculated in gas. You can't buy, sell, or store gas. Fee is not estimated in Ether. Every transaction defines an exchange rate.
-Every command has a price in gas. ```CREATE``` command in bytecode has more gas that ```ADD```.
+Every command has a price in gas. ```CREATE``` command in bytecode has more gas than ```ADD```.
 
 Without enough gas, a contract will Fail to run. 
 
