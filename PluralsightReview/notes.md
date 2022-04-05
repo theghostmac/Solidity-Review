@@ -161,3 +161,14 @@ wei is the smallest. Ether = 1.
 ## Transactions and Calls
 A call is the second way to interact with the Ethereum network. It doesn't change a state, free to execute, and faster.
 Has view and pure modifiers.
+
+## Deployment with Remix
+
+## Remove Contracts
+Use selfdestruct method. It costs negative gas, but the calls end. The transaction history remains on the blockchain and anyone can review them.
+
+```solidity
+address beneficiary = 0x123;
+// send funds to the beneficiary address;
+selfdestruct(beneficiary);
+```
